@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>Приватность · Video Tracks</title
+  ><style>
+    body {
+      background: #11131d;
+      color: #edf0fc;
+      font:
+        17px/1.7 system-ui,
+        sans-serif;
+      margin: 0;
+    }
+    main {
+      max-width: 850px;
+      margin: auto;
+      padding: 50px 24px;
+    }
+    h1 {
+      line-height: 1.2;
+      font-size: 38px;
+    }
+    h2 {
+      margin-top: 35px;
+      font-size: 23px;
+    }
+    p {
+      color: #c2c8df;
+    }
+    a {
+      color: #bcaeff;
+    }
+  </style>
+  <main>
+    <h1>Video Tracks<br />Политика приватности</h1>
+    <p>Версия политики: 6 ноября 2026.</p>
+    <h2>Что обрабатывается</h2>
+    <p>
+      Расширение воспроизводит выбранные вами видео, звуковые дорожки и субтитры
+      на вашем устройстве. Локальный файл читается только после выбора в
+      стандартном диалоге. Для сетевого видео браузер обращается к выбранному
+      вами источнику и сайту, где включён плеер.
+    </p>
+    <h2>Что получает разработчик</h2>
+    <p>
+      Расширение не передаёт разработчику видео, звук, субтитры, ссылки, историю
+      просмотра, сведения аккаунта или статистику. В расширении нет собственной
+      телеметрии и рекламных запросов. Сайты, видеосерверы и сам браузер могут
+      обрабатывать запросы согласно своим правилам.
+    </p>
+    <h2>Что хранится в браузере</h2>
+    <p>
+      В локальных настройках расширения сохраняются переключатель включения и
+      явно добавленные адреса серверов — схема, хост и порт. Пути к файлам и
+      токены в этих настройках не сохраняются. Адрес ожидающего разрешения
+      сервера может временно храниться в storage.session. Разрешения сайтов
+      управляются браузером. Прямая ссылка, открытая в отдельной вкладке плеера,
+      находится в адресе этой вкладки и может быть видна обычным механизмам
+      браузера.
+    </p>
+    <h2>Зачем нужен доступ к сайтам</h2>
+    <p>
+      На подключённых сайтах расширение может встраивать свой плеер вместо
+      обычного видео. Сайт или сервер подключается только после отдельного
+      разрешения. Для источника без CORS расширение добавляет необходимые
+      заголовки ответа только в разрешённой вкладке, для её сайта-инициатора и
+      выбранного видео либо явно настроенного сервера. Временные правила
+      удаляются при навигации или закрытии вкладки.
+    </p>
+    <h2>Где находятся декодеры</h2>
+    <p>
+      JavaScript, WebAssembly и элементы интерфейса включены в пакет расширения.
+      Исполняемый код не загружается с CDN. Библиотеки распространяются со
+      своими лицензиями, доступными в разделе «О расширении».
+    </p>
+    <h2>Как удалить данные</h2>
+    <p>
+      Отозвать доступ можно в настройках расширения Chrome/Brave. Удаление
+      расширения удаляет его локальные настройки. Для просмотра учётная запись
+      разработчика не требуется; выбранный вами источник может требовать
+      собственную авторизацию.
+    </p>
+    <h2>Вопросы</h2>
+    <p>
+      Разработчик: Valery Ignatkovich. До публикации карточки используется
+      <a href="https://github.com/ValeraGin">публичный профиль разработчика</a>.
+      Адрес поддержки в магазине будет указан при публикации.
+    </p>
+    <hr />
+    <h2 lang="en">English summary</h2>
+    <p lang="en">
+      Video Tracks processes selected media locally. It does not transmit video,
+      subtitles, URLs, browsing history or analytics to the developer. Requests
+      go to the website and media source you choose. Enabled state and
+      explicitly configured server origins are kept locally; a pending origin
+      may be kept for the session. Media URLs are not saved as persistent
+      settings. A URL opened in the player's separate tab is part of that tab's
+      address and may be handled by normal browser history mechanisms. Host
+      permissions are granted separately. Tab- and initiator-scoped CORS rules
+      target the selected media or a configured server and are cleared on
+      navigation or tab close. Code and WASM decoders are bundled; there is no
+      remote executable code. Revoke site access in browser settings or
+      uninstall the extension to remove local settings.
+    </p>
+  </main>
+</html>
